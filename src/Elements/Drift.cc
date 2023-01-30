@@ -17,6 +17,7 @@
  */
 
 #include "Hector/Elements/Drift.h"
+#include "Hector/Elements/ElementFactory.h"
 #include "Hector/Parameters.h"
 #include "Hector/Utils/StateVector.h"
 
@@ -37,3 +38,5 @@ namespace hector {
     }
   }  // namespace element
 }  // namespace hector
+
+REGISTER_ELEMENT("drift", Drift);
